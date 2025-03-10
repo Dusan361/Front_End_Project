@@ -3,12 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.ourstyle {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  align-items: center;
-  font-size: 1.5rem;
-  background-color: aqua;
-  height: 50px;
+
+.img {
+  height: 90px;
 }
