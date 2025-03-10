@@ -1,14 +1,14 @@
-import { Trainer1 } from "./trainers.model";
+import { Trainers } from "./trainers.model";
 
-export const trainers2 : Trainer1 [] = [
+export const TRAINERS : Trainers [] = [
     {
-        name: "Nikola",
-        age: 21,
-        img:"",
-        description: "Nikola is a great trainer"
+    name: "Nikola",
+    age: 21,
+    img:"",
+    description: "Nikola is a great trainer"
     },
     {  
-    name: "Hasan",
+    name: "Hassan",
     age: 23,
     img:"",
     description: "Hasan is a great trainer",

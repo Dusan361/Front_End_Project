@@ -1,8 +1,12 @@
 <h1>Our trainers</h1>
 <p>The coaches at our gym are truly dedicated and make a huge difference in your fitness journey. Each one brings a unique approach to training, combining expertise, motivation, and personalized attention to help achieve your goals. Whether it's offering guidance on form, pushing you to your limits, or providing valuable advice on nutrition and recovery, they always go above and beyond. Their passion for fitness is contagious, and they create an environment where every workout feels like a step closer to success. Their support and encouragement keeps you motivated, even on the toughest days, and you always leave feeling stronger and more confident.</p>
-<div class="trainers">
-  <div *ngFor="let trainer of trainers" class="trainer">
-    <img [src]="trainer.img" [alt]="trainer.name" />
-    <h2>{{ trainer.name }}</h2>
-    <p>{{ trainer.bio }}</p>
-  </div>
+@for(x of trainers; track $index){
+    <div class="card" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{x.name}} </h5>
+            <p class="card-text">{{x.age}}</p>
+            <p class="card-text">{{x.description}}</p>
+        </div>
+    </div>
+}

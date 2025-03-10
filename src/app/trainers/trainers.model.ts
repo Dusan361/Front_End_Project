@@ -1,6 +1,6 @@
-export interface Trainer1 {
-  name: string;
-  age: number;
-  img: string;
-  description: string;
+export interface Trainers {
+  name: string,
+  age: number,
+  img: string,
+  description: string,
 }
