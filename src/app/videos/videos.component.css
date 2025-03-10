@@ -1,0 +1,9 @@
+
+.video1{
+    display: flex;
+    position: absolute;
+}
+
+.container1{
+    position: relative;
+}
