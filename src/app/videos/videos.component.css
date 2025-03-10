@@ -1,9 +1,13 @@
-
-.video1{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.video1 {
+  display: flex;
+  justify-content: space-around;
+}
+.video2 {
     display: flex;
-    position: absolute;
-}
-
-.container1{
-    position: relative;
-}
+    justify-content: space-around;
+  }
