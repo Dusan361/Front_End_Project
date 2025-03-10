@@ -4,7 +4,7 @@ export const TRAINERS : Trainers [] = [
     {
     name: "Nikola",
     age: 21,
-    img:"",
+    img:"NIKOLA.jpg",
     description: "Nikola is a great trainer"
     },
     {  
