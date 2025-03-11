@@ -5,9 +5,37 @@
 }
 
 .footer {
+  padding: 20px;
   background-color: wheat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
+  background-color: black;
+  color: #ff5722;
+}
+
+.logos {
+  display: flex;
+  gap: 25px;
+}
+.img1 {
+  height: 30px;
+  background-color: white !important;
+}
+.img2 {
+  height: 30px;
+}
+.img3 {
+  height: 30px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.my-btn {
+  background-color: #ff5722;
 }
