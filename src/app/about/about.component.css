@@ -1,4 +1,5 @@
 .container {
+<<<<<<< HEAD
   max-width: 800px;
   margin: 0;
   padding: 20px;
@@ -64,3 +65,80 @@ h2 {
 .schedule th {
   background-color: #b0b4b8;
 }
+=======
+    max-width: 800px;
+    margin: 0;
+    padding: 20px;
+    
+  }
+  
+  h1, h2 {
+    color: #0e0d0d;
+  }
+  .space-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .btn:hover {
+    background: #0056b3;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    
+  }
+  .left-section {
+    width: 100%;
+  }
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pricing, .schedule {
+    background: #e2e6e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  .schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  .schedule th, .schedule td {
+    border: 1px solid #948989;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .schedule th {
+    background-color: #a2a5a8;
+  }
+  .container1 {
+    background-image: url('/img/running-6252827_1280.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+  }
+  
+  
+  
+  
+>>>>>>> 3a2745572bbb78439b5591d2fa9b0d9e9fb42e07
