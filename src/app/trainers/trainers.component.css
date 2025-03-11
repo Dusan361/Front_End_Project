@@ -1,39 +1,67 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 80px;
-    height: 450px;
-    color: white;
-    background-image: url(https://cdn.pixabay.com/photo/2019/01/20/00/48/weights-3942914_1280.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  height: 450px;
+  color: white;
+  background-image: url(https://cdn.pixabay.com/photo/2019/01/20/00/48/weights-3942914_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+img {
+  height: 250px;
+  object-fit: cover;
 }
 
 .first {
-    background-color: white;
-    padding: 50px 20px;
-    text-align: center;
-    margin-top: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
-    color:black;
-    background-color: white;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nikola {
+  display: flex;
+  justify-content: center;
+}
+.my-style {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+@media (width < 900px) {
+  .my-style {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }

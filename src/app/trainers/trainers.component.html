@@ -1,22 +1,71 @@
-<h1>Our trainers</h1>
-<p class="first">
-  The coaches at our gym are truly dedicated and make a huge difference in your
-  fitness journey. Each one brings a unique approach to training, combining
-  expertise, motivation, and personalized attention to help achieve your goals.
-  Whether it's offering guidance on form, pushing you to your limits, or
-  providing valuable advice on nutrition and recovery, they always go above and
-  beyond. Their passion for fitness is contagious, and they create an
-  environment where every workout feels like a step closer to success. Their
-  support and encouragement keeps you motivated, even on the toughest days, and
-  you always leave feeling stronger and more confident.
-</p>
-@for(x of trainers; track $index){
-<div class="card" style="width: 18rem">
-  <img [src]="'img/' + x.img" class="card-img-top" alt="..." />
-  <div class="card-body">
-    <h5 class="card-title">{{ x.name }}</h5>
-    <p class="card-text">{{ x.age }}</p>
-    <p class="card-text">{{ x.description }}</p>
+<div class="container1">
+  <h1>Our trainers</h1>
+  <p class="first">
+    The coaches at our gym are truly dedicated and make a huge difference in
+    your fitness journey. Each one brings a unique approach to training,
+    combining expertise, motivation, and personalized attention to help achieve
+    your goals. Whether it's offering guidance on form, pushing you to your
+    limits, or providing valuable advice on nutrition and recovery, they always
+    go above and beyond. Their passion for fitness is contagious, and they
+    create an environment where every workout feels like a step closer to
+    success. Their support and encouragement keeps you motivated, even on the
+    toughest days, and you always leave feeling stronger and more confident.
+  </p>
+  <br />
+  <h3 class="text-center">Head Coach:</h3>
+  <div class="nikola">
+    <div class="card" style="width: 18rem">
+      <img src="img/NIKOLA.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Nikola</h5>
+        <p class="card-text">21</p>
+        <p class="card-text">
+          Nikola is an enthusiastic and motivated new fitness trainer, eager to
+          help clients reach their health and fitness goals. With a focus on
+          strength, endurance, and overall wellness, they create personalized
+          workout plans and provide consistent support. Nikola is dedicated to
+          learning and growing in their fitness journey.
+        </p>
+        <div class="collapse" id="collapseText1">
+          <p>
+            Nikola is an enthusiastic and motivated new fitness trainer, eager
+            to help clients reach their health and fitness goals. With a focus
+            on strength, endurance, and overall wellness, they create
+            personalized workout plans and provide consistent support. Nikola is
+            dedicated to learning and growing in their fitness journey.
+          </p>
+        </div>
+        <button
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseText1"
+        >
+          Show More
+        </button>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="my-style">
+    @for(x of trainers; track $index){
+    <div class="card mx-auto" style="width: 18rem">
+      <img [src]="'img/' + x.img" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{ x.name }}</h5>
+        <p class="card-text">{{ x.age }}</p>
+        <p class="card-text">{{ x.description }}</p>
+        <div class="collapse" id="collapseText1">
+          <p>{{ x.description }}</p>
+        </div>
+        <button
+          class="btn btn-primary btn-sm"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseText1"
+        >
+          Show More
+        </button>
+      </div>
+    </div>
+    }
   </div>
 </div>
-}
