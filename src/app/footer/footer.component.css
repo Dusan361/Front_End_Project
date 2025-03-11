@@ -13,6 +13,7 @@
   gap: 30px;
   background-color: black;
   color: #ff5722;
+  position: relative;
 }
 
 .logos {
@@ -38,7 +39,23 @@
   flex-direction: column;
   gap: 5px;
 }
+#email {
+  margin-left: 10px;
+}
 
 .my-btn {
   background-color: #ff5722;
+  width: 100px;
+  margin-left: 10px;
+}
+.my-btn1 {
+  background-color: #ff5722;
+  width: 100px;
+}
+
+.test {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
