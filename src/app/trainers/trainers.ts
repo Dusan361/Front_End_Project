@@ -1,6 +1,7 @@
 import { Trainers } from "./trainers.model";
 
 export const TRAINERS : Trainers [] = [
+   
     // {
     // name: "Nikola",
     // age: 21,

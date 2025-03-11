@@ -26,7 +26,7 @@
           workout plans and provide consistent support. Nikola is dedicated to
           learning and growing in their fitness journey.
         </p>
-        <div class="collapse" id="collapseText1">
+        <div class="collapse" id="collapseText10">
           <p>
             Nikola is an enthusiastic and motivated new fitness trainer, eager
             to help clients reach their health and fitness goals. With a focus
@@ -38,7 +38,7 @@
         <button
           class="btn btn-primary btn-sm"
           data-bs-toggle="collapse"
-          data-bs-target="#collapseText1"
+          data-bs-target="#collapseText10"
         >
           Show More
         </button>
@@ -54,16 +54,17 @@
         <h5 class="card-title">{{ x.name }}</h5>
         <p class="card-text">{{ x.age }}</p>
         <p class="card-text">{{ x.description }}</p>
-        <div class="collapse" id="collapseText1">
-          <p>{{ x.description }}</p>
-        </div>
         <button
+          (click)="onToggleVisible($index)"
           class="btn btn-primary btn-sm"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseText1"
         >
           Show More
         </button>
+        @if(visible == $index){
+
+        <p>{{ x.description }}</p>
+
+        }
       </div>
     </div>
     }
