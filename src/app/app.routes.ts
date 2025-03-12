@@ -6,6 +6,7 @@ import { TrainersComponent } from './trainers/trainers.component';
 import { VideosComponent } from './videos/videos.component';
 import { ReviewComponent } from './review/review.component';
 import { NewsComponent } from './home/news/news.component';
+import { CoursePricingComponent } from './home/course-pricing/course-pricing.component';
 
 export const routes: Routes = [
 
@@ -15,5 +16,6 @@ export const routes: Routes = [
     { path: "about", component: AboutComponent },
     { path: "trainers", component: TrainersComponent },
     { path: "videos", component: VideosComponent },
-    { path: "review", component: ReviewComponent }
+    { path: "review", component: ReviewComponent },
+    { path: "pricing", component: CoursePricingComponent }
 ];

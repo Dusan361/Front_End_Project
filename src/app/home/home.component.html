@@ -1,123 +1,159 @@
 <div class="home-container">
-    
-    <!-- Bootstrap Carousel -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-                <img src="https://cdn.pixabay.com/photo/2023/03/12/16/10/man-7847247_1280.jpg" alt="Welcome to MikiGym">
-                <div class="carousel-caption">
-                    <h1>Welcome to MikiGym</h1>
-                    <button routerLink="/courses">Explore Our Courses</button>
-                </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-                <img src="https://cdn.pixabay.com/photo/2024/03/30/19/29/ai-generated-8665327_1280.png" alt="Meet Our Expert Trainers">
-                <div class="carousel-caption">
-                    <h1>Meet Our Expert Trainers</h1>
-                    <button routerLink="/trainers">Explore Our Trainers</button>
-                </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-                <img src="https://cdn.pixabay.com/photo/2021/11/10/06/23/workout-6783020_1280.jpg" alt="What People Say About Us">
-                <div class="carousel-caption">
-                    <h1>What People Say About Us</h1>
-                    <button routerLink="/review">Read Testimonials</button>
-                </div>
-            </div>
+  <!-- Bootstrap Carousel -->
+  <div
+    id="heroCarousel"
+    class="carousel slide"
+    data-bs-ride="carousel"
+    data-bs-interval="3000"
+  >
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img
+          src="https://cdn.pixabay.com/photo/2023/03/12/16/10/man-7847247_1280.jpg"
+          alt="Welcome to MikiGym"
+        />
+        <div class="carousel-caption">
+          <h1>Welcome to MikiGym</h1>
+          <button routerLink="/courses">Explore Our Courses</button>
         </div>
-
-        <!-- Previous Button -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-
-        <!-- Next Button -->
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img
+          src="https://cdn.pixabay.com/photo/2024/03/30/19/29/ai-generated-8665327_1280.png"
+          alt="Meet Our Expert Trainers"
+        />
+        <div class="carousel-caption">
+          <h1>Meet Our Expert Trainers</h1>
+          <button routerLink="/trainers">Explore Our Trainers</button>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img
+          src="https://cdn.pixabay.com/photo/2021/11/10/06/23/workout-6783020_1280.jpg"
+          alt="What People Say About Us"
+        />
+        <div class="carousel-caption">
+          <h1>What People Say About Us</h1>
+          <button routerLink="/review">Read Testimonials</button>
+        </div>
+      </div>
     </div>
 
+    <!-- Previous Button -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
 
-    <!-- GYM Idea Section -->
-    <div class="landing-item-container">
-        <h2>Why Choose MikiGym?</h2>
-        <p>
-            At MikiGym, we believe fitness is more than just exercise—it's a lifestyle. Our mission is to create 
-            a supportive and motivating environment where members of all fitness levels can thrive.
-        </p>
-        <p>
-            Whether you're looking to build muscle, lose weight, improve endurance, or simply stay active, 
-            we offer expert trainers, cutting-edge equipment, and personalized programs tailored to your goals.
-        </p>
-        <img src="img/gymLogo.png" alt="MikiGym Fitness">
-    </div>
+    <!-- Next Button -->
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <!-- News Section -->
-<div class="landing-item-container">
+  <!-- GYM Idea Section -->
+  <div class="landing-item-container">
+    <h2>Why Choose MikiGym?</h2>
+    <p>
+      At MikiGym, we believe fitness is more than just exercise—it's a
+      lifestyle. Our mission is to create a supportive and motivating
+      environment where members of all fitness levels can thrive.
+    </p>
+    <p>
+      Whether you're looking to build muscle, lose weight, improve endurance, or
+      simply stay active, we offer expert trainers, cutting-edge equipment, and
+      personalized programs tailored to your goals.
+    </p>
+    <img src="img/gymLogo.png" alt="MikiGym Fitness" />
+  </div>
+
+  <!-- News Section -->
+  <div class="landing-item-container">
     <h2>Latest News & Updates</h2>
     <div class="news-container">
-        @for (news of newsList; track news.id) {
-        <div class="news-item">
-            <h4>{{ news.emoji }} {{ news.title }}</h4>
-            <p>{{ news.content }}</p>
-            <span class="news-date">{{ news.date }}</span>
-            <a [routerLink]="'/reviewDetails/'+ news.id" class="btn">Read More</a>
-        </div>
-    }
+      @for (news of newsList; track news.id) {
+      <div class="news-item">
+        <h4>{{ news.emoji }} {{ news.title }}</h4>
+        <p>{{ news.content }}</p>
+        <span class="news-date">{{ news.date }}</span>
+        <a [routerLink]="'/reviewDetails/' + news.id" class="btn">Read More</a>
+      </div>
+      }
     </div>
-</div>
+  </div>
 
-<!-- Dark Section -->
-<div class="dark-motivation-section">
+  <!-- Dark Section -->
+  <div class="dark-motivation-section">
     <h2 class="motivation-title">Push Yourself Beyond Limits</h2>
-    <p class="motivation-text">"Strength doesn’t come from what you can do. It comes from overcoming the things you once thought you couldn’t."</p>
-</div>
- 
-<!-- Our Courses -->
- <div class="landing-item-container">
-<div class="split-container ">
-    <div class="left-column">
+    <p class="motivation-text">
+      "Strength doesn’t come from what you can do. It comes from overcoming the
+      things you once thought you couldn’t."
+    </p>
+  </div>
+
+  <!-- Our Courses -->
+  <div class="landing-item-container">
+    <div class="split-container">
+      <div class="left-column">
         <h2>Explore Our Courses</h2>
         <p>
-            Discover a wide range of fitness programs designed for all skill levels. Whether you're a beginner or 
-            an experienced athlete, our courses will help you achieve your fitness goals.
+          Discover a wide range of fitness programs designed for all skill
+          levels. Whether you're a beginner or an experienced athlete, our
+          courses will help you achieve your fitness goals.
         </p>
         <button routerLink="/courses">Explore Our Courses</button>
+      </div>
+      <div class="right-column">
+        <img
+          src="https://cdn.pixabay.com/photo/2021/11/10/06/23/workout-6783020_1280.jpg"
+          alt="Our course"
+        />
+      </div>
     </div>
-    <div class="right-column">
-        <img src="https://cdn.pixabay.com/photo/2021/11/10/06/23/workout-6783020_1280.jpg" alt="Our course">
-    </div>
+  </div>
 
-
-</div>
-</div>
-
-<!-- Our Trainers -->
-<div class="landing-item-container">
-<div class="split-container ">
-    <div class="left-column">
+  <!-- Our Trainers -->
+  <div class="landing-item-container">
+    <div class="split-container">
+      <div class="left-column">
         <h2>Meet Our Expert Trainers</h2>
         <p>
-            At MikiGym, our trainers are more than just fitness professionals—they are dedicated mentors 
-            who will guide you on your fitness journey, ensuring you stay motivated and achieve real results.
+          At MikiGym, our trainers are more than just fitness professionals—they
+          are dedicated mentors who will guide you on your fitness journey,
+          ensuring you stay motivated and achieve real results.
         </p>
         <button routerLink="/trainers">Meet Our Trainers</button>
+      </div>
+      <div class="right-column">
+        <img src="img/NIKOLA.jpg" alt="Expert Trainer" />
+      </div>
     </div>
-    <div class="right-column">
-        <img src="img/NIKOLA.jpg" alt="Expert Trainer">
+  </div>
+
+  <div class="landing-item-container prices">
+    @for(x of pricingList; track x.id){
+    <div class="card" style="width: 18rem">
+      <div class="card-body my-card">
+        <h5 class="card-title">{{ x.title }}</h5>
+        <p class="card-text">{{ x.description }}</p>
+        <p class="card-text">{{ x.price }}</p>
+        <a routerLink="/pricing" class="btn btn-primary">Show Details</a>
+      </div>
     </div>
-</div>
-</div>
-
-
-
-
-
-
- 
+    }
+  </div>
 </div>

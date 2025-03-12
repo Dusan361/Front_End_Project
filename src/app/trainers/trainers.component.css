@@ -59,9 +59,9 @@ img {
   align-items: flex-start;
 }
 
-/* @media (width < 900px) {
+@media (width < 900px) {
   .my-style {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-} */
+}

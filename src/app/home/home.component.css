@@ -1,233 +1,241 @@
-  /* General Page Styles */
-  .home-container {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+/* General Page Styles */
+.home-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 /******** CAROUSEL  ******************************************************************/
 /* Carousel Item - Makes Images Fit */
 .carousel-item img {
-    width: 100%;
-    height: 70vh; /* Adjust as needed */
-    object-fit: cover; /* Ensures images cover the full area */
+  width: 100%;
+  height: 70vh; /* Adjust as needed */
+  object-fit: cover; /* Ensures images cover the full area */
 }
 
 /* Styling for Text Overlay */
 .carousel-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    padding: 20px;
-    border-radius: 8px;
-    color: white;
-    width: 80%;
-    height: 30vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  width: 80%;
+  height: 30vh;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Button Styling */
 .carousel-caption button {
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 .carousel-caption button:hover {
-    background-color: #e64a19;
+  background-color: #e64a19;
 }
 /********  LANDING CONTAINER  *************************************************************/
 /* Landing - item - container */
 .landing-item-container {
-    background-color: white;
-    padding: 50px 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .landing-item-container h2 {
-    color: #ff5722;
-    font-size: 2rem;
-    margin-bottom: 15px;
+  color: #ff5722;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 .landing-item-container p {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
 }
 
 .landing-item-container img {
-    width: 250px;
-    margin-top: 10px;
+  width: 250px;
+  margin-top: 10px;
 }
 
 /* Button Styling */
 .landing-item-container button {
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 .landing-item-container button:hover {
-    background-color: #e64a19;
+  background-color: #e64a19;
 }
 
 /******   NEWS   CSS   **************************************************************/
 /* News Container */
 .news-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 /* Individual News Item */
 .news-item {
-background: #f8f8f8;
-padding: 20px;
-border-radius: 8px;
-text-align: left;
-flex: 1 1 calc(33% - 20px); /* 3 items per row */
-min-width: 280px;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  flex: 1 1 calc(33% - 20px); /* 3 items per row */
+  min-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover Effect */
 .news-item:hover {
-transform: translateY(-5px);
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* News Heading */
 .news-item h4 {
-font-size: 1.2rem;
-margin-bottom: 10px;
-color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 /* News Paragraph */
 .news-item p {
-font-size: 1rem;
-color: #555;
-line-height: 1.5;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
 }
 
 /* News Date */
 .news-date {
-font-size: 0.9rem;
-font-weight: bold;
-color: #777;
-display: block;
-margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #777;
+  display: block;
+  margin-top: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 991px) {
-.news-container {
-flex-direction: column;
-align-items: center;
-}
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.news-item {
-width: 100%;
-max-width: 600px;
-}
+  .news-item {
+    width: 100%;
+    max-width: 600px;
+  }
 }
 
 /******   DARK SECTION   **************************************************************/
 /* Dark Background Section */
 .dark-motivation-section {
-    background-color: #111;  /* Deep Black Background */
-    color: #fff;
-    text-align: center;
-    padding: 80px 20px;
+  background-color: #111; /* Deep Black Background */
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
 }
 
 /* Bold Motivational Title */
 .motivation-title {
-    font-size: 2.8rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #ff5722; /* Energetic Orange */
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-    margin-bottom: 15px;
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ff5722; /* Energetic Orange */
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
 }
 
 /* Motivational Quote */
 .motivation-text {
-    font-size: 1.5rem;
-    font-weight: 400;
-    max-width: 800px;
-    margin: auto;
-    line-height: 1.6;
-    opacity: 0.9;
+  font-size: 1.5rem;
+  font-weight: 400;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 /* Responsive Styling */
 @media (max-width: 768px) {
-    .motivation-title {
-        font-size: 2rem;
-    }
-    .motivation-text {
-        font-size: 1.2rem;
-    }
+  .motivation-title {
+    font-size: 2rem;
+  }
+  .motivation-text {
+    font-size: 1.2rem;
+  }
 }
 
 /******   Split Container   **************************************************/
 /* Container with Two Columns */
 .split-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 /* Left Column (Text) */
 .left-column {
-    flex: 1;
-    max-width: 50%;
+  flex: 1;
+  max-width: 50%;
 }
 
 .right-column {
-    flex: 1;
-    max-width: 50%;
-    overflow: hidden; /* Prevents any overflow */
-    img {  
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-        }
+  flex: 1;
+  max-width: 50%;
+  overflow: hidden; /* Prevents any overflow */
+  img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .split-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .left-column,
-    .right-column {
-        max-width: 100%;
-    }
+  .split-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .left-column,
+  .right-column {
+    max-width: 100%;
+  }
+}
+
+.prices {
+  display: flex;
+  justify-content: space-around;
+}
+.my-card {
+  background-color: rgb(252, 252, 252);
 }

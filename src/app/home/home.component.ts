@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NewsService } from '../news.service';
 import { News } from '../news.model';
+import { Price } from '../course.model';
+import { pricingList } from '../course';
+
+
 
 @Component({
   selector: 'app-home',
@@ -12,11 +16,15 @@ import { News } from '../news.model';
 export class HomeComponent implements OnInit{
 
   newsList: News[] = [];
+  pricingList: Price[] = pricingList;
 
-  constructor(private newsService: NewsService) { }
+constructor(private newsService: NewsService) { }
+
 
   ngOnInit(): void {
     this.newsList = this.newsService.getAllNews();
+
+    console.log(this.pricingList);
     
   }
 
