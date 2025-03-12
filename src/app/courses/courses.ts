@@ -4,7 +4,7 @@ export const COURSES: Courses[] = [
     {
         name: "Yoga",
         days: "Monday,Wednesday,Friday",
-        time: "9:00-10:30, 19:00-20:30 (Room 1)",
+        time: "19:00-20:30 (Room 1)",
         img: "yoga.jpg",   
         description: "Yoga is a practice that combines physical postures, breathing exercises, and meditation to improve overall health and well-being. It is suitable for all ages and fitness levels, and can help reduce stress, increase flexibility, and improve strength and balance. Whether you are a beginner or an experienced yogi, our classes are designed to help you achieve your fitness goals and find peace of mind.",
     },
@@ -24,8 +24,8 @@ export const COURSES: Courses[] = [
     },
     {
         name: "Strength Training",
-        days: "Tuesday,Thursday (Room 1)",
-        time: "19:00-20:00",
+        days: "Tuesday,Thursday",
+        time: "19:00-20:00 (Room 1)",
         img: "strength.jpg",
         description: "Strength Training is a full-body workout that focuses on building muscle, increasing strength, and improving endurance. Whether you're new to strength training or looking to take your fitness to the next level, our classes are designed to help you achieve your goals. Led by certified instructors, these classes incorporate a variety of equipment and exercises to target all major muscle groups. From free weights and resistance bands to bodyweight exercises and functional movements, our Strength Training classes offer a challenging and effective workout for all fitness levels. Get ready to sculpt, tone, and strengthen your body in our Strength Training classes!",
     },
@@ -35,6 +35,13 @@ export const COURSES: Courses[] = [
         time: "18:00-19:00 (Room 2)",
         img: "hiphop.jpg",
         description: "Hip-Hop Dance is a high-energy, fun-filled workout that combines dance, music, and movement to help you burn calories, improve coordination, and boost your mood. Whether you're a seasoned dancer or new to the world of hip-hop, our classes are designed to get you moving and grooving to the latest beats. Led by certified instructors, these classes feature easy-to-follow choreography, exciting music, and a supportive atmosphere that will have you feeling like a dance superstar in no time. Get ready to break a sweat, learn new moves, and have a blast in our Hip-Hop Dance classes!",
+    },
+    {
+        name: "Boxing for Beginners",
+        days: "Tuesday,Friday",
+        time: "20:00-21:00 (Room 1)",
+        img: "boxing.jpg",
+        description: "Boxing for Beginners is a fun and challenging workout that combines boxing techniques, cardio drills, and strength training to help you build endurance, improve coordination, and boost your confidence. Whether you're new to boxing or looking to take your skills to the next level, our classes are designed to teach you the fundamentals of the sport in a safe and supportive environment. Led by certified instructors, these classes focus on proper form, technique, and conditioning to help you get the most out of your workout. Get ready to punch, kick, and sweat your way to a stronger, fitter you in our Boxing for Beginners classes!",
     },
 
 
