@@ -61,41 +61,14 @@
 <div class="landing-item-container">
     <h2>Latest News & Updates</h2>
     <div class="news-container">
+        @for (news of newsList; track news.id) {
         <div class="news-item">
-            <h4>Grand Opening of MikiGym! 🎉</h4>
-            <p>Join us for our grand opening event! Enjoy free workouts, special discounts, and exciting giveaways.</p>
-            <span class="news-date">March 1, 2025</span>
+            <h4>{{ news.emoji }} {{ news.title }}</h4>
+            <p>{{ news.content }}</p>
+            <span class="news-date">{{ news.date }}</span>
+            <a [routerLink]="'/reviewDetails/'+ news.id" class="btn">Read More</a>
         </div>
-        <div class="news-item">
-            <h4>New Yoga Classes 🧘</h4>
-            <p>Morning and evening yoga sessions now available! Relax, stretch, and strengthen your body.</p>
-            <span class="news-date">March 5, 2025</span>
-        </div>
-        <div class="news-item">
-            <h4>20% Off Personal Training 💪</h4>
-            <p>Sign up this month and get an exclusive 20% discount on personal training sessions with our experts.</p>
-            <span class="news-date">March 10, 2025</span>
-        </div>
-        <div class="news-item">
-            <h4>Nutrition Workshop 🥗</h4>
-            <p>Learn how to create a balanced meal plan with our nutritionists. Limited spots available—sign up today!</p>
-            <span class="news-date">March 15, 2025</span>
-        </div>
-        <div class="news-item">
-            <h4>Summer Fitness Challenge ☀️</h4>
-            <p>Join our 8-week challenge and compete for exciting prizes while reaching your fitness goals.</p>
-            <span class="news-date">March 20, 2025</span>
-        </div>
-        <div class="news-item">
-            <h4>24/7 Gym Access 🕒</h4>
-            <p>We are now open 24/7! Train anytime that fits your schedule with unlimited access to our facilities.</p>
-            <span class="news-date">March 25, 2025</span>
-        </div>
-        <div class="news-item">
-            <h4>Kids Fitness Program 🏃‍♂️</h4>
-            <p>Enroll your children in our fun and engaging fitness program designed to keep them active and healthy.</p>
-            <span class="news-date">March 30, 2025</span>
-        </div>
+    }
     </div>
 </div>
 
