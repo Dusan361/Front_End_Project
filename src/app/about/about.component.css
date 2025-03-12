@@ -1,7 +1,4 @@
 .container {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     max-width: 800px;
     margin: 0;
     padding: 20px;
@@ -67,19 +64,13 @@
     background-color: #a2a5a8;
   }
   .container1 {
-=======
->>>>>>> f0313fa1e0ff62502c5c4b0f20346cdd42e77534
   max-width: 800px;
   margin: 0;
   padding: 20px;
 }
 
-<<<<<<< HEAD
 h1,
 h2 {
-=======
-h1,h2 {
->>>>>>> f0313fa1e0ff62502c5c4b0f20346cdd42e77534
   color: #0e0d0d;
 }
 .space-image {
@@ -138,7 +129,6 @@ h1,h2 {
 }
 
 .schedule th {
-<<<<<<< HEAD
   background-color: #a2a5a8;
 }
 .container1 {
@@ -148,23 +138,5 @@ h1,h2 {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-=======
-  background-color: #b0b4b8;
-}
- .container1 {
->>>>>>> d6ea22ad2d4a04e8b84ec4540f81f5d99407ba4c
-    background-image: url('/img/running-6252827_1280.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-  }
   
   
-  
-  
-<<<<<<< HEAD
-=======
-
->>>>>>> d6ea22ad2d4a04e8b84ec4540f81f5d99407ba4c
->>>>>>> f0313fa1e0ff62502c5c4b0f20346cdd42e77534
