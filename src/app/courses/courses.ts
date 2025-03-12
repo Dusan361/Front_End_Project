@@ -34,6 +34,7 @@ export const COURSES: Courses[] = [
         days: "Wednesday", 
         time: "18:00-19:00 (Room 2)",
         img: "hiphop.jpg",
+        description: "Hip-Hop Dance is a high-energy, fun-filled workout that combines dance, music, and movement to help you burn calories, improve coordination, and boost your mood. Whether you're a seasoned dancer or new to the world of hip-hop, our classes are designed to get you moving and grooving to the latest beats. Led by certified instructors, these classes feature easy-to-follow choreography, exciting music, and a supportive atmosphere that will have you feeling like a dance superstar in no time. Get ready to break a sweat, learn new moves, and have a blast in our Hip-Hop Dance classes!",
     },
 
 
