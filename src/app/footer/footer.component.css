@@ -53,9 +53,23 @@
   width: 100px;
 }
 
-.test {
+.footer-links {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   right: 20px;
   top: 50%;
+  gap: 20px;
   transform: translateY(-50%);
+}
+.footer-links:hover {
+  color: white;
+}
+.footer-logo {
+  position: absolute;
+  left: 20px;
+
+  img {
+    height: 180px;
+  }
 }
