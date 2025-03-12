@@ -24,22 +24,3 @@
         expandedDescription: 'This course focuses on maximizing strength, power, muscle hypertrophy, and athletic conditioning through high-level techniques and complex exercises. It includes advanced training methods such as periodization, Olympic lifting, plyometrics, and specialized programming for different fitness goals. Participants will work on refining their skills in strength training, endurance, flexibility, and performance while incorporating advanced recovery strategies and personalized nutrition plans. The course emphasizes achieving specific fitness milestones, improving technique, and optimizing results while minimizing the risk of injury.'
     },
   ]
-
-
-
-
-
-
-
-
-
-
-
-// export interface Price {
-//     id: number;
-//     imageUrl: string; 
-//     title: string;
-//     description: string;
-//     price: number;
-//     expandedDescription: string; 
-// }
