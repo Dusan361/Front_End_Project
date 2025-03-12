@@ -148,10 +148,11 @@
     @for(x of pricingList; track x.id){
     <div class="card" style="width: 18rem">
       <div class="card-body my-card">
-        <h5 class="card-title">{{ x.title }}</h5>
+        <h4 class="card-title fw-bold">{{ x.title }}</h4>
+        <hr />
         <p class="card-text">{{ x.description }}</p>
-        <p class="card-text">{{ x.price }}</p>
-        <a routerLink="/pricing" class="btn btn-primary">Show Details</a>
+        <hr />
+        <p class="card-text price">{{ x.price }} &euro;</p>
       </div>
     </div>
     }
