@@ -4,4 +4,6 @@ export interface News {
     content: string;
     date: string;
     emoji: string;
+    imageUrl: string; 
+    moreInfo: string;  
 }

@@ -1,1 +1,11 @@
-<p>news works!</p>
+<div class="news-container">
+    <img src="{{ news?.imageUrl }}" alt="image">
+    <h1> {{ news?.title }}</h1>
+    <h2>{{ news?.date }} {{ news?.emoji}}</h2>
+    
+    <p class="content">{{ news?.content }}</p>
+    <p class="moreInfo">{{ news?.moreInfo }}</p>
+
+    <a routerLink="/" class="btn">Back Home</a>
+
+</div>
