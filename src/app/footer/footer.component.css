@@ -73,3 +73,15 @@
     height: 180px;
   }
 }
+@media (width < 900px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .footer-logo {
+    img {
+      height: 0px;
+    }
+  }
+}
